@@ -6,6 +6,9 @@
 <p>2. Install Grunt</p>
 <pre>npm install -g grunt-cli</pre>
 
+<p>3. Install Bower</p>
+<pre>npm install -g bower</pre>
+
 
 <h2>Initial install</h2>
 <p>Run this in the folder:</p>
