@@ -1,6 +1,6 @@
 # hci-assignment
-Mac
-1. Install node.js
+<p>Mac</p>
+<p>1. Install node.js</p>
 <a href="https://nodejs.org/en/">https://nodejs.org/en/</a>
 
 <p>2. Install Grunt</p>
