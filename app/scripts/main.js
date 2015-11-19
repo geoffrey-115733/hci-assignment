@@ -29,7 +29,7 @@ $(".btn-default").click(function() {
  http://www.bootstraptoggle.com
  **/
 
-var count=30;
+var count=90000000;
 var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
 function timer() {
