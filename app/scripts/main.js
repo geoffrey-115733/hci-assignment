@@ -2,7 +2,7 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
 
 $(".btn-success").click(function() {
     count=30;
-    $('#status').html('<p><span class="glyphicon glyphicon-ok"></span> System will turn <strong>ON</strong> in </p><p class="center-block"><span id="timer">30</span> seconds</p>');
+    $('#status').html('<p class="text-center">System will turn <strong>ON</strong> in</p><p class="text-center"><span id="timer">30</span> seconds</p>');
     $('body').removeClass("red");
     $('body').removeClass("green");
     $('body').addClass("lightgreen");
@@ -11,7 +11,7 @@ $(".btn-success").click(function() {
 
 
 $(".btn-danger").click(function() {
-    $('#status').html('<span class="glyphicon glyphicon-remove"></span> System is <strong>OFF</strong>');
+    $('#status').html('<p class="text-center"><span class="glyphicon glyphicon-remove"></span> System is <strong>OFF</strong></p>');
     $('body').removeClass("green");
     $('body').removeClass("lightgreen");
     $('body').addClass("red");
@@ -32,17 +32,17 @@ $(".btn-default").click(function() {
 var count=30;
 var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
-function timer()
-{
-    count=count-1;
-    if (count <= 0){
+function timer() {
+    count = count - 1;
+    //alert(count);
+    if (count <= 0) {
         clearInterval(counter);
-        $('#status').html('<span class="glyphicon glyphicon-ok"></span> System is <strong>ON</strong>');
+        $('#status').html('<p class="text-center"><span class="glyphicon glyphicon-ok"></span> System is <strong>ON</strong></p>');
         $('body').removeClass("lightgreen");
         $('body').addClass("green");
         return;
     }
-    else{
+    else {
         $('#timer').html(count); // watch for spelling
     }
-
+}
