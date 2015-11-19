@@ -19,6 +19,14 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
   background-color: red;
 }
 
+.lightgreen {
+  background-color: lightgreen;
+}
+
+#timer{
+  font-size: 60px;
+}
+
 #status {
   font-size: 30px;
   padding-top: 20%;
@@ -33,7 +41,7 @@ body {
 }
 
 .container > div {
-  padding-bottom: 10%;
+  padding-bottom: 8%;
 }
 
 .right{
