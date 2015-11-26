@@ -4,6 +4,30 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+.hidden {
+  display: none;
+}
+
+// .toggle.ios, .toggle-on.ios, .toggle-off.ios { 
+//   border-radius: 30px; 
+// }
+// .toggle.ios .toggle-handle { 
+//   border-radius: 30px; 
+// }
+
+.table-bordered span{
+  font-size: xx-large;
+}
+
+.toggle.btn {
+    min-width: 130px !important;
+    min-height: 48px !important;
+}
+
+.toggle-on.btn, .toggle-off.btn {
+    font-size: x-large;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
