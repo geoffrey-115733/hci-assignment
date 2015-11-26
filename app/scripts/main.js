@@ -1,8 +1,11 @@
 console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
 
 $(".on-button").click(function() {
-    count=30;
-    $('#status').html('<p class="text-center">System will turn <strong>ON</strong> in</p><p class="text-center"><span id="timer">30</span> seconds</p>');
+    //needed to reset variable and counter object so the count down kept working.
+    count=10;
+    counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+    
+    $('#status').html('<p class="text-center">System will turn <strong>ON</strong> in</p><p class="text-center"><span id="timer">10</span> seconds</p>');
     $('body').removeClass("red");
     $('body').removeClass("green");
     $('body').addClass("lightgreen");
@@ -72,12 +75,12 @@ $(".done").click(function() {
  **/
 
 var count=90000000;
-var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+var counter=setInterval(timers, 1000); //1000 will  run it every 1 second
 
 function timer() {
     count = count - 1;
     //alert(count);
-    if (count <= 0) {
+    if (count < 1) {
         clearInterval(counter);
         $('#status').html('<p class="text-center"><span class="glyphicon glyphicon-ok"></span> System is <strong>ON</strong></p>');
         $('body').removeClass("lightgreen");
