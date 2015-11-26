@@ -9,19 +9,27 @@ $(".on-button").click(function() {
     $('body').removeClass("red");
     $('body').removeClass("green");
     $('body').addClass("lightgreen");
+    $('#stove').bootstrapToggle('off');
+    $('#oven').bootstrapToggle('off');
+    $('#heater').bootstrapToggle('off');
 
 });
 
 
 $(".off-button").click(function() {
+    count=0;
     $('#status').html('<p class="text-center"><span class="glyphicon glyphicon-remove"></span> System is <strong>OFF</strong></p>');
     $('body').removeClass("green");
     $('body').removeClass("lightgreen");
     $('body').addClass("red");
+    $('#stove').bootstrapToggle('on');
+    $('#oven').bootstrapToggle('on');
+    $('#heater').bootstrapToggle('on');
 });
 
 
 $(".override-button").click(function() {
+    count=0;
     $('#status').text("Override activated");
     $('body').removeClass("red");
     $('body').removeClass("lightgreen");
@@ -79,7 +87,6 @@ var counter=setInterval(timers, 1000); //1000 will  run it every 1 second
 
 function timer() {
     count = count - 1;
-    //alert(count);
     if (count < 1) {
         clearInterval(counter);
         $('#status').html('<p class="text-center"><span class="glyphicon glyphicon-ok"></span> System is <strong>ON</strong></p>');
